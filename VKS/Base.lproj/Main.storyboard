@@ -93,7 +93,7 @@
                                     <constraint firstItem="Dr0-oS-LoX" firstAttribute="width" secondItem="wDZ-Ee-KPY" secondAttribute="width" id="v8d-9a-fsw"/>
                                     <constraint firstItem="zin-I6-a5e" firstAttribute="top" secondItem="Dr0-oS-LoX" secondAttribute="bottom" constant="30" id="yno-ab-Ob4"/>
                                     <constraint firstItem="HS4-vl-h4u" firstAttribute="centerY" secondItem="Dr0-oS-LoX" secondAttribute="centerY" id="ypV-Bx-DMD"/>
-                                    <constraint firstItem="zin-I6-a5e" firstAttribute="bottom" secondItem="K7v-qi-M31" secondAttribute="bottom" constant="20" id="zck-I5-3n2"/>
+                                    <constraint firstItem="K7v-qi-M31" firstAttribute="bottom" secondItem="zin-I6-a5e" secondAttribute="bottom" constant="20" id="zck-I5-3n2"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="K7v-qi-M31"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Rlb-dN-8Bb"/>
@@ -111,6 +111,7 @@
                     <connections>
                         <outlet property="loginTextField" destination="wDZ-Ee-KPY" id="sMT-Ix-uZR"/>
                         <outlet property="passwordTextField" destination="Dr0-oS-LoX" id="ZgT-Fz-vrO"/>
+                        <outlet property="scrollView" destination="hzi-Fd-HQv" id="hOz-ss-sek"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
