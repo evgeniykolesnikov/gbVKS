@@ -61,5 +61,11 @@ class LoginViewController: UIViewController {
            let contentInsets = UIEdgeInsets.zero
            scrollView.contentInset = contentInsets
        }
+
+    @IBAction func viewTapped(_ sender: UITapGestureRecognizer) {
+        //view.resignFirstResponder()
+        scrollView.endEditing(true)
+    }
+
 }
 

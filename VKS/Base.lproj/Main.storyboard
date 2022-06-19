@@ -73,6 +73,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Dr0-oS-LoX" firstAttribute="leading" secondItem="Rlb-dN-8Bb" secondAttribute="centerX" id="0mo-tU-Wyy"/>
                                     <constraint firstItem="Kf4-ii-vdL" firstAttribute="top" secondItem="1gF-Tu-QZ8" secondAttribute="bottom" constant="40" id="0uF-jZ-y0n"/>
@@ -97,6 +98,9 @@
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="K7v-qi-M31"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Rlb-dN-8Bb"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hNR-4p-oAJ" appends="YES" id="jQ4-jk-VUb"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -115,6 +119,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hNR-4p-oAJ">
+                    <connections>
+                        <action selector="viewTapped:" destination="BYZ-38-t0r" id="v0p-3K-7bz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="133" y="110"/>
         </scene>
