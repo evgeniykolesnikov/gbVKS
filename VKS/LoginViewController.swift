@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
         if loginTextField.text == "Stalin" &&
             passwordTextField.text == "USSRmatter" {
 
-            performSegue(withIdentifier: "MainScreeenPresentationSegue", sender: self)
+            performSegue(withIdentifier: "MainScreeenPresentationSegue1", sender: self)
             print("Auth succeeded")
         } else {
             print("Auth failed")
