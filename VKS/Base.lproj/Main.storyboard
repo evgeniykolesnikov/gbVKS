@@ -112,10 +112,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hzi-Fd-HQv" secondAttribute="bottom" id="gcc-Uv-Jre"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QcQ-du-HhH"/>
                     <connections>
                         <outlet property="loginTextField" destination="wDZ-Ee-KPY" id="sMT-Ix-uZR"/>
                         <outlet property="passwordTextField" destination="Dr0-oS-LoX" id="ZgT-Fz-vrO"/>
                         <outlet property="scrollView" destination="hzi-Fd-HQv" id="hOz-ss-sek"/>
+                        <segue destination="Iag-d4-9Y5" kind="presentation" identifier="MainScreeenPresentationSegue" modalPresentationStyle="fullScreen" id="vmZ-W8-OC2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,7 +127,65 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="133" y="110"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Inu-Hw-eST">
+            <objects>
+                <viewController id="wQn-LB-91r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RDZ-c2-qUw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hTg-OQ-0DO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Q5I-5q-RDA">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q5I-5q-RDA" id="9xR-He-78W">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jLU-px-lqO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jLU-px-lqO" firstAttribute="bottom" secondItem="hTg-OQ-0DO" secondAttribute="bottom" id="Ia4-K3-G1J"/>
+                            <constraint firstItem="hTg-OQ-0DO" firstAttribute="leading" secondItem="jLU-px-lqO" secondAttribute="leading" id="Im8-uZ-adV"/>
+                            <constraint firstItem="hTg-OQ-0DO" firstAttribute="top" secondItem="jLU-px-lqO" secondAttribute="top" id="byk-rp-m01"/>
+                            <constraint firstItem="jLU-px-lqO" firstAttribute="trailing" secondItem="hTg-OQ-0DO" secondAttribute="trailing" id="cyn-Ld-Spo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mpz-dG-VuX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3J1-6a-nhr"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWd-kO-864" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2747.826086956522" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2e6-9H-awf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iag-d4-9Y5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="po6-dP-oWo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wQn-LB-91r" kind="relationship" relationship="rootViewController" id="8vK-X3-fc5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxy-AN-vT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1917" y="110"/>
         </scene>
     </scenes>
     <resources>

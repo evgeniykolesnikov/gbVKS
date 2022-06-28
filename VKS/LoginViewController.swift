@@ -30,6 +30,8 @@ class LoginViewController: UIViewController {
         // Второе - когда она пропадает
 
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
