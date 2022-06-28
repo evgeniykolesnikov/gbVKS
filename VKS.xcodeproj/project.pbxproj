@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */; };
 		443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */; };
-		443C89E3285F4EEA0004A5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E2285F4EEA0004A5C7 /* ViewController.swift */; };
+		443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */; };
 		443C89E6285F4EEA0004A5C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C89E4285F4EEA0004A5C7 /* Main.storyboard */; };
 		443C89E8285F4EEB0004A5C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443C89E7285F4EEB0004A5C7 /* Assets.xcassets */; };
 		443C89EB285F4EEB0004A5C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */; };
+		44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44406E3F285FB2F900C5E424 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		443C89DB285F4EEA0004A5C7 /* VKS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		443C89E2285F4EEA0004A5C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		443C89E5285F4EEA0004A5C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443C89E7285F4EEB0004A5C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443C89EA285F4EEB0004A5C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443C89EC285F4EEB0004A5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44406E3F285FB2F900C5E424 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */,
 				443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */,
-				443C89E2285F4EEA0004A5C7 /* ViewController.swift */,
+				443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */,
+				44406E3F285FB2F900C5E424 /* MainViewController.swift */,
 				443C89E4285F4EEA0004A5C7 /* Main.storyboard */,
 				443C89E7285F4EEB0004A5C7 /* Assets.xcassets */,
 				443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443C89E3285F4EEA0004A5C7 /* ViewController.swift in Sources */,
+				443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */,
 				443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */,
 				443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */,
+				44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
