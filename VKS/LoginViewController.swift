@@ -41,8 +41,14 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        print("Login: \(loginTextField.text ?? "") ")
-        print("Password: \(passwordTextField.text ?? "")")
+        if loginTextField.text == "Stalin" &&
+            passwordTextField.text == "USSRmatter" {
+
+            performSegue(withIdentifier: "MainScreeenPresentationSegue", sender: self)
+            print("Auth succeeded")
+        } else {
+            print("Auth failed")
+        }
     }
     // Когда клавиатура появляется
        @objc func keyboardWasShown(notification: Notification){
