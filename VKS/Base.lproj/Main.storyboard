@@ -323,8 +323,8 @@
     </scenes>
     <resources>
         <image name="appLogo" width="1024" height="1024"/>
-        <image name="person.3.sequence.fill" catalog="system" width="128" height="58"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="person.3.sequence.fill" catalog="system" width="32" height="32"/>
+        <image name="person.crop.circle" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
