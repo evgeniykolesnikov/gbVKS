@@ -9,6 +9,17 @@ import UIKit
 
 class FavoriteUnionsTableViewController: UITableViewController {
 
+    let unions = [
+        Comrades(name: "Союз Писателей", image: UIImage(systemName: "pencil.circle")),
+        Comrades(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
+        Comrades(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
+        Comrades(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
+        Comrades(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
+        Comrades(name: "Союз слесарей", image: UIImage(systemName: "gear")),
+        Comrades(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
+        Comrades(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
+
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,23 +34,28 @@ class FavoriteUnionsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return unions.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UnionsCell",
+                                                       for: indexPath) as? UnionsCell else {
+            preconditionFailure("Error")
+        }
+
+
+
+        cell.nameUnionLabel.text = unions[indexPath.row].name
+        cell.imageUnion.image = unions[indexPath.row].image
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
