@@ -16,11 +16,11 @@
 		44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44406E3F285FB2F900C5E424 /* MainViewController.swift */; };
 		445B3D5128706483001EE1DC /* FavoriteComradesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5028706483001EE1DC /* FavoriteComradesTableViewController.swift */; };
 		445B3D53287064FB001EE1DC /* FavoriteUnionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */; };
-		445B3D552870650A001EE1DC /* AllUnionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D542870650A001EE1DC /* AllUnionsTableViewController.swift */; };
 		445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5628707045001EE1DC /* ComradesCell.swift */; };
 		445B3D5928707704001EE1DC /* Comrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5828707704001EE1DC /* Comrades.swift */; };
 		449BAE6D2871CDDF00BD477A /* UnionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE6C2871CDDF00BD477A /* UnionsCell.swift */; };
 		449BAE6F2871D06700BD477A /* Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE6E2871D06700BD477A /* Union.swift */; };
+		449BAE732871FB6500BD477A /* AllUnionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE722871FB6500BD477A /* AllUnionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +35,11 @@
 		44406E3F285FB2F900C5E424 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		445B3D5028706483001EE1DC /* FavoriteComradesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteComradesTableViewController.swift; sourceTree = "<group>"; };
 		445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUnionsTableViewController.swift; sourceTree = "<group>"; };
-		445B3D542870650A001EE1DC /* AllUnionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsTableViewController.swift; sourceTree = "<group>"; };
 		445B3D5628707045001EE1DC /* ComradesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradesCell.swift; sourceTree = "<group>"; };
 		445B3D5828707704001EE1DC /* Comrades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comrades.swift; sourceTree = "<group>"; };
 		449BAE6C2871CDDF00BD477A /* UnionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionsCell.swift; sourceTree = "<group>"; };
 		449BAE6E2871D06700BD477A /* Union.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Union.swift; sourceTree = "<group>"; };
+		449BAE722871FB6500BD477A /* AllUnionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 				445B3D5628707045001EE1DC /* ComradesCell.swift */,
 				445B3D5828707704001EE1DC /* Comrades.swift */,
 				445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */,
+				449BAE722871FB6500BD477A /* AllUnionsViewController.swift */,
 				449BAE6E2871D06700BD477A /* Union.swift */,
-				445B3D542870650A001EE1DC /* AllUnionsTableViewController.swift */,
 				449BAE6C2871CDDF00BD477A /* UnionsCell.swift */,
 				443C89E7285F4EEB0004A5C7 /* Assets.xcassets */,
 				443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */,
@@ -170,7 +170,7 @@
 				445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */,
 				445B3D5928707704001EE1DC /* Comrades.swift in Sources */,
 				44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */,
-				445B3D552870650A001EE1DC /* AllUnionsTableViewController.swift in Sources */,
+				449BAE732871FB6500BD477A /* AllUnionsViewController.swift in Sources */,
 				445B3D5128706483001EE1DC /* FavoriteComradesTableViewController.swift in Sources */,
 				445B3D53287064FB001EE1DC /* FavoriteUnionsTableViewController.swift in Sources */,
 			);
