@@ -10,19 +10,19 @@ import UIKit
 class FavoriteComradesTableViewController: UITableViewController {
 
     let comrades = [
-    Comrades(name: "Владимир Ильич Ленин"),
-    Comrades(name: "Сергей Павлович Королев"),
-    Comrades(name: "Андрей Дмитриевич Сахаров"),
-    Comrades(name: "Юрий Алексеевич Гагарин"),
-    Comrades(name: "Сергей Анатольевич Курёхин"),
-    Comrades(name: "Виктор Робертович Цой"),
-    Comrades(name: "Георгий Константинович Жуков"),
-    Comrades(name: "Маяковский Владимир Владимирович"),
-    Comrades(name: "Пастернак Борис Леонидович"),
-    Comrades(name: "Цветаева, Марина Ивановна"),
-    Comrades(name: "Ахматова Анна Андреевна"),
-    Comrades(name: "Рождественский Роберт Иванович"),
-    Comrades(name: "Булгаков Михаил Афанасьевич"),
+        Comrades(name: "Владимир Ильич Ленин", image: UIImage(named: "imageComradeVladimirIlyichLenin")),
+        Comrades(name: "Сергей Павлович Королев", image: UIImage(named: "imageComradeSergeiPavlovichKorolev")),
+        Comrades(name: "Андрей Дмитриевич Сахаров", image: UIImage(named: "imageComradeAndreyDmitrievichSakharov")),
+        Comrades(name: "Юрий Алексеевич Гагарин", image: UIImage(named: "imageComradeYuriAlekseyevichGagarin")),
+        Comrades(name: "Сергей Анатольевич Курёхин", image: UIImage(named: "imageComradeSergeiAnatolievichKuryokhin")),
+        Comrades(name: "Виктор Робертович Цой", image: UIImage(named: "imageComradeViktorRobertovichTsoi")),
+        Comrades(name: "Георгий Константинович Жуков", image: UIImage(named: "imageComradeGeorgyKonstantinovichZhukov")),
+        Comrades(name: "Маяковский Владимир Владимирович", image: UIImage(named: "imageComradeMayakovskyVladimirVladimirovich")),
+        Comrades(name: "Пастернак Борис Леонидович", image: UIImage(named: "imageComradePasternakBorisLeonidovich")),
+        Comrades(name: "Цветаева Марина Ивановна", image: UIImage(named: "imageComradeTsvetaevaMarinaIvanovna")),
+        Comrades(name: "Ахматова Анна Андреевна", image: UIImage(named: "imageComradeAkhmatovaAnnaAndreevna")),
+        Comrades(name: "Рождественский Роберт Иванович", image: UIImage(named: "imageComradeRozhdestvenskyRobertIvanovich")),
+        Comrades(name: "Булгаков Михаил Афанасьевич", image: UIImage(named: "imageComradeBulgakovMikhailAfanasyevich")),
     ]
 
     override func viewDidLoad() {
@@ -56,6 +56,7 @@ class FavoriteComradesTableViewController: UITableViewController {
         }
 //        cell.imageComrade
         cell.nameComradeLabel.text = comrades[indexPath.row].name
+        cell.imageComrade.image = comrades[indexPath.row].image
 
 
         return cell
