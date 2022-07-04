@@ -9,15 +9,15 @@ import UIKit
 
 class FavoriteUnionsTableViewController: UITableViewController {
 
-    let unions = [
-        Comrades(name: "Союз Писателей", image: UIImage(systemName: "pencil.circle")),
-        Comrades(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
-        Comrades(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
-        Comrades(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
-        Comrades(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
-        Comrades(name: "Союз слесарей", image: UIImage(systemName: "gear")),
-        Comrades(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
-        Comrades(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
+    var unions = [
+        Unions(name: "Союз Писателей", image: UIImage(systemName: "pencil.circle")),
+        Unions(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
+        Unions(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
+        Unions(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
+        Unions(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
+        Unions(name: "Союз слесарей", image: UIImage(systemName: "gear")),
+        Unions(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
+        Unions(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
 
     ]
     override func viewDidLoad() {
@@ -57,6 +57,19 @@ class FavoriteUnionsTableViewController: UITableViewController {
         return cell
     }
 
+
+    @IBAction func addSelectedUnion(segue: UIStoryboardSegue) {
+
+        if let sourseVC = segue.source as? AllUnionsTableViewController,
+           let indexPath = sourseVC.tableView.indexPathForSelectedRow {
+            let union = sourseVC.unions[indexPath.row]
+            if !unions.contains(where: {$0.name == union.name}) {
+            unions.append(union)
+
+            tableView.reloadData()
+            }}
+
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -65,17 +78,15 @@ class FavoriteUnionsTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            unions.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+
 
     /*
     // Override to support rearranging the table view.

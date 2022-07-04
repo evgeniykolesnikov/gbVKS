@@ -62,7 +62,15 @@ class FavoriteComradesTableViewController: UITableViewController {
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+        if segue.identifier == "showAvatar",
+           let destinationVC = segue.destination as? ComradeImagesCollectionViewController,
+           let indexPath = tableView.indexPathForSelectedRow {
+            let nameComrade = comrades[indexPath.row].name
+            destinationVC.title = nameComrade
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

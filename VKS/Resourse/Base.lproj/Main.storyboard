@@ -190,7 +190,7 @@
                                 <connections>
                                     <outlet property="imageComrade" destination="Szk-z2-4M7" id="KfO-f0-kDr"/>
                                     <outlet property="nameComradeLabel" destination="91K-mX-lIe" id="WRg-Ov-U17"/>
-                                    <segue destination="vEU-gs-EUB" kind="show" id="Dla-nb-qzx"/>
+                                    <segue destination="vEU-gs-EUB" kind="show" identifier="showAvatar" id="Dla-nb-qzx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -200,7 +200,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="lgz-Qp-ZH4">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="l8j-lv-LGu"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="l8j-lv-LGu"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSf-nz-teM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -258,7 +258,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="I9r-lQ-05n">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="kvd-Oj-rhz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kvd-Oj-rhz">
                             <connections>
                                 <segue destination="sbQ-wB-zAB" kind="show" id="FEo-vc-eb1"/>
                             </connections>
@@ -313,7 +313,6 @@
         <!--Comrade Images Collection View Controller-->
         <scene sceneID="vVX-4u-lHJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wrb-hr-izJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="vEU-gs-EUB" customClass="ComradeImagesCollectionViewController" customModule="VKS" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pab-1y-jGm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -382,8 +381,9 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="Up9-81-RHq"/>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrb-hr-izJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5342.0289855072469" y="-177.45535714285714"/>
+            <point key="canvasLocation" x="5339" y="-194"/>
         </scene>
         <!--Comrades-->
         <scene sceneID="XFJ-dF-UXB">
@@ -439,6 +439,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="ex0-wV-7p7" kind="unwind" unwindAction="addSelectedUnionWithSegue:" id="lni-x6-p3o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -452,6 +455,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69h-tU-dCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ex0-wV-7p7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5293" y="1206"/>
         </scene>
