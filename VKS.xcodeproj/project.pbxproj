@@ -23,6 +23,8 @@
 		449BAE732871FB6500BD477A /* AllUnionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE722871FB6500BD477A /* AllUnionsViewController.swift */; };
 		449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE742871FFD100BD477A /* AllUnionsTableViewController.swift */; };
 		449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE762872007A00BD477A /* AllUnionsCell.swift */; };
+		449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */; };
+		44AB232D2872F78400B96A9B /* ComrageImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB232C2872F78400B96A9B /* ComrageImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		449BAE722871FB6500BD477A /* AllUnionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsViewController.swift; sourceTree = "<group>"; };
 		449BAE742871FFD100BD477A /* AllUnionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsTableViewController.swift; sourceTree = "<group>"; };
 		449BAE762872007A00BD477A /* AllUnionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsCell.swift; sourceTree = "<group>"; };
+		449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		44AB232C2872F78400B96A9B /* ComrageImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComrageImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,23 +82,57 @@
 			children = (
 				443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */,
 				443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */,
-				443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */,
-				44406E3F285FB2F900C5E424 /* MainViewController.swift */,
-				443C89E4285F4EEA0004A5C7 /* Main.storyboard */,
-				445B3D5028706483001EE1DC /* FavoriteComradesTableViewController.swift */,
-				445B3D5628707045001EE1DC /* ComradesCell.swift */,
-				445B3D5828707704001EE1DC /* Comrades.swift */,
-				445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */,
-				449BAE742871FFD100BD477A /* AllUnionsTableViewController.swift */,
-				449BAE722871FB6500BD477A /* AllUnionsViewController.swift */,
-				449BAE6E2871D06700BD477A /* Union.swift */,
-				449BAE6C2871CDDF00BD477A /* UnionsCell.swift */,
-				449BAE762872007A00BD477A /* AllUnionsCell.swift */,
-				443C89E7285F4EEB0004A5C7 /* Assets.xcassets */,
-				443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */,
+				44AB233128731FD000B96A9B /* Resourse */,
+				44AB232E28731F4200B96A9B /* Controller */,
+				44AB233028731FA500B96A9B /* View */,
+				44AB232F28731F9000B96A9B /* Model */,
 				443C89EC285F4EEB0004A5C7 /* Info.plist */,
 			);
 			path = VKS;
+			sourceTree = "<group>";
+		};
+		44AB232E28731F4200B96A9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */,
+				443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */,
+				44406E3F285FB2F900C5E424 /* MainViewController.swift */,
+				445B3D5028706483001EE1DC /* FavoriteComradesTableViewController.swift */,
+				445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */,
+				449BAE742871FFD100BD477A /* AllUnionsTableViewController.swift */,
+				449BAE722871FB6500BD477A /* AllUnionsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44AB232F28731F9000B96A9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				445B3D5828707704001EE1DC /* Comrades.swift */,
+				449BAE6E2871D06700BD477A /* Union.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44AB233028731FA500B96A9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44AB232C2872F78400B96A9B /* ComrageImageCollectionViewCell.swift */,
+				445B3D5628707045001EE1DC /* ComradesCell.swift */,
+				449BAE6C2871CDDF00BD477A /* UnionsCell.swift */,
+				449BAE762872007A00BD477A /* AllUnionsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44AB233128731FD000B96A9B /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				443C89E4285F4EEA0004A5C7 /* Main.storyboard */,
+				443C89E7285F4EEB0004A5C7 /* Assets.xcassets */,
+				443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */,
+			);
+			path = Resourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +210,10 @@
 				449BAE6D2871CDDF00BD477A /* UnionsCell.swift in Sources */,
 				443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */,
 				449BAE6F2871D06700BD477A /* Union.swift in Sources */,
+				44AB232D2872F78400B96A9B /* ComrageImageCollectionViewCell.swift in Sources */,
 				443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */,
 				449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */,
+				449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */,
 				449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */,
 				445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */,
 				445B3D5928707704001EE1DC /* Comrades.swift in Sources */,
