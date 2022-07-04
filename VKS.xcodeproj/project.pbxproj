@@ -24,7 +24,7 @@
 		449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE742871FFD100BD477A /* AllUnionsTableViewController.swift */; };
 		449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE762872007A00BD477A /* AllUnionsCell.swift */; };
 		449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */; };
-		44AB232D2872F78400B96A9B /* ComrageImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB232C2872F78400B96A9B /* ComrageImageCollectionViewCell.swift */; };
+		44AB232D2872F78400B96A9B /* ComradeImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		449BAE742871FFD100BD477A /* AllUnionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsTableViewController.swift; sourceTree = "<group>"; };
 		449BAE762872007A00BD477A /* AllUnionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsCell.swift; sourceTree = "<group>"; };
 		449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeImagesCollectionViewController.swift; sourceTree = "<group>"; };
-		44AB232C2872F78400B96A9B /* ComrageImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComrageImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 		44AB233028731FA500B96A9B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				44AB232C2872F78400B96A9B /* ComrageImageCollectionViewCell.swift */,
+				44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */,
 				445B3D5628707045001EE1DC /* ComradesCell.swift */,
 				449BAE6C2871CDDF00BD477A /* UnionsCell.swift */,
 				449BAE762872007A00BD477A /* AllUnionsCell.swift */,
@@ -210,7 +210,7 @@
 				449BAE6D2871CDDF00BD477A /* UnionsCell.swift in Sources */,
 				443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */,
 				449BAE6F2871D06700BD477A /* Union.swift in Sources */,
-				44AB232D2872F78400B96A9B /* ComrageImageCollectionViewCell.swift in Sources */,
+				44AB232D2872F78400B96A9B /* ComradeImageCollectionViewCell.swift in Sources */,
 				443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */,
 				449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */,
 				449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */,

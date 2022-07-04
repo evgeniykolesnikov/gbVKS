@@ -11,6 +11,22 @@ private let reuseIdentifier = "Cell"
 
 class ComradeImagesCollectionViewController: UICollectionViewController {
 
+    var comrades = [
+        Comrades(name: "Владимир Ильич Ленин", image: UIImage(named: "imageComradeVladimirIlyichLenin")),
+        Comrades(name: "Сергей Павлович Королев", image: UIImage(named: "imageComradeSergeiPavlovichKorolev")),
+        Comrades(name: "Андрей Дмитриевич Сахаров", image: UIImage(named: "imageComradeAndreyDmitrievichSakharov")),
+        Comrades(name: "Юрий Алексеевич Гагарин", image: UIImage(named: "imageComradeYuriAlekseyevichGagarin")),
+        Comrades(name: "Сергей Анатольевич Курёхин", image: UIImage(named: "imageComradeSergeiAnatolievichKuryokhin")),
+        Comrades(name: "Виктор Робертович Цой", image: UIImage(named: "imageComradeViktorRobertovichTsoi")),
+        Comrades(name: "Георгий Константинович Жуков", image: UIImage(named: "imageComradeGeorgyKonstantinovichZhukov")),
+        Comrades(name: "Маяковский Владимир Владимирович", image: UIImage(named: "imageComradeMayakovskyVladimirVladimirovich")),
+        Comrades(name: "Пастернак Борис Леонидович", image: UIImage(named: "imageComradePasternakBorisLeonidovich")),
+        Comrades(name: "Цветаева Марина Ивановна", image: UIImage(named: "imageComradeTsvetaevaMarinaIvanovna")),
+        Comrades(name: "Ахматова Анна Андреевна", image: UIImage(named: "imageComradeAkhmatovaAnnaAndreevna")),
+        Comrades(name: "Рождественский Роберт Иванович", image: UIImage(named: "imageComradeRozhdestvenskyRobertIvanovich")),
+        Comrades(name: "Булгаков Михаил Афанасьевич", image: UIImage(named: "imageComradeBulgakovMikhailAfanasyevich")),
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,17 +59,18 @@ class ComradeImagesCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ComradeImage",
-                                                            for: indexPath) as? ComrageImageCollectionViewCell else {
+                                                            for: indexPath) as? ComradeImageCollectionViewCell else {
             preconditionFailure("Error")
         }
     
-        // Configure the cell
-    
+
+//        cell.imageComrade.image = comrades[indexPath.row].image
+        cell.imageComrade.image = comrades[indexPath.row].image
         return cell
     }
 

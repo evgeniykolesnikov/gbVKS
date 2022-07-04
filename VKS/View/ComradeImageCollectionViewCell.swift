@@ -7,9 +7,7 @@
 
 import UIKit
 
-class ComrageImageCollectionViewCell: UICollectionViewCell {
+class ComradeImageCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var nameComrade: UILabel!
     @IBOutlet var imageComrade: UIImageView!
-    @IBOutlet var textComrede: UILabel!
 }
