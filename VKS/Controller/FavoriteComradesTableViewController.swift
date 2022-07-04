@@ -9,7 +9,7 @@ import UIKit
 
 class FavoriteComradesTableViewController: UITableViewController {
 
-    let comrades = [
+    var comrades = [
         Comrades(name: "Владимир Ильич Ленин", image: UIImage(named: "imageComradeVladimirIlyichLenin")),
         Comrades(name: "Сергей Павлович Королев", image: UIImage(named: "imageComradeSergeiPavlovichKorolev")),
         Comrades(name: "Андрей Дмитриевич Сахаров", image: UIImage(named: "imageComradeAndreyDmitrievichSakharov")),
@@ -54,7 +54,7 @@ class FavoriteComradesTableViewController: UITableViewController {
                                                        for: indexPath) as? ComradesCell else {
             preconditionFailure("Error")
         }
-//        cell.imageComrade
+
         cell.nameComradeLabel.text = comrades[indexPath.row].name
         cell.imageComrade.image = comrades[indexPath.row].image
 
@@ -69,6 +69,7 @@ class FavoriteComradesTableViewController: UITableViewController {
            let indexPath = tableView.indexPathForSelectedRow {
             let nameComrade = comrades[indexPath.row].name
             destinationVC.title = nameComrade
+            destinationVC.comradImages.append(comrades[indexPath.row].image!)
         }
     }
     /*

@@ -11,6 +11,8 @@ private let reuseIdentifier = "Cell"
 
 class ComradeImagesCollectionViewController: UICollectionViewController {
 
+    public var comradImages: [UIImage] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,17 +45,17 @@ class ComradeImagesCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return comradImages.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ComradeImage",
-                                                            for: indexPath) as? ComrageImageCollectionViewCell else {
+                                                            for: indexPath) as? ComradeImageCollectionViewCell else {
             preconditionFailure("Error")
         }
     
-        // Configure the cell
-    
+
+        cell.imageComrade.image = comradImages[indexPath.row]
         return cell
     }
 
