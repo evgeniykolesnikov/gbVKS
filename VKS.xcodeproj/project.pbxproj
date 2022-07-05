@@ -14,6 +14,8 @@
 		443C89E8285F4EEB0004A5C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443C89E7285F4EEB0004A5C7 /* Assets.xcassets */; };
 		443C89EB285F4EEB0004A5C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */; };
 		44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44406E3F285FB2F900C5E424 /* MainViewController.swift */; };
+		4449142328743A3700FBBDB1 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449142228743A3700FBBDB1 /* CanvasViewController.swift */; };
+		4449142528743B1F00FBBDB1 /* DrawinghControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449142428743B1F00FBBDB1 /* DrawinghControl.swift */; };
 		445B3D5128706483001EE1DC /* FavoriteComradesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5028706483001EE1DC /* FavoriteComradesTableViewController.swift */; };
 		445B3D53287064FB001EE1DC /* FavoriteUnionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */; };
 		445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5628707045001EE1DC /* ComradesCell.swift */; };
@@ -37,6 +39,8 @@
 		443C89EA285F4EEB0004A5C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443C89EC285F4EEB0004A5C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44406E3F285FB2F900C5E424 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4449142228743A3700FBBDB1 /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		4449142428743B1F00FBBDB1 /* DrawinghControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawinghControl.swift; sourceTree = "<group>"; };
 		445B3D5028706483001EE1DC /* FavoriteComradesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteComradesTableViewController.swift; sourceTree = "<group>"; };
 		445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUnionsTableViewController.swift; sourceTree = "<group>"; };
 		445B3D5628707045001EE1DC /* ComradesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradesCell.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		44AB232E28731F4200B96A9B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4449142228743A3700FBBDB1 /* CanvasViewController.swift */,
 				449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */,
 				443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */,
 				44406E3F285FB2F900C5E424 /* MainViewController.swift */,
@@ -117,6 +122,7 @@
 		44AB233028731FA500B96A9B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4449142428743B1F00FBBDB1 /* DrawinghControl.swift */,
 				44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */,
 				445B3D5628707045001EE1DC /* ComradesCell.swift */,
 				449BAE6C2871CDDF00BD477A /* UnionsCell.swift */,
@@ -206,10 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4449142328743A3700FBBDB1 /* CanvasViewController.swift in Sources */,
 				443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */,
 				449BAE6D2871CDDF00BD477A /* UnionsCell.swift in Sources */,
 				443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */,
 				449BAE6F2871D06700BD477A /* Union.swift in Sources */,
+				4449142528743B1F00FBBDB1 /* DrawinghControl.swift in Sources */,
 				44AB232D2872F78400B96A9B /* ComradeImageCollectionViewCell.swift in Sources */,
 				443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */,
 				449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */,
