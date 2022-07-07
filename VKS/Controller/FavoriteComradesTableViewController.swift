@@ -70,6 +70,7 @@ class FavoriteComradesTableViewController: UITableViewController {
             let nameComrade = myComrades[indexPath.row].name
             destinationVC.title = nameComrade
             destinationVC.comradImages.append(myComrades[indexPath.row].image!)
+            destinationVC.arrayComrade = myComrades[indexPath.row].comrade
         }
     }
     /*

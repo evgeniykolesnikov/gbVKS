@@ -12,7 +12,7 @@ private let reuseIdentifier = "Cell"
 class ComradeImagesCollectionViewController: UICollectionViewController {
 
     public var comradImages: [UIImage] = []
-
+    var arrayComrade: [NewComrade] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
