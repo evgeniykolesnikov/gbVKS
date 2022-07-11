@@ -9,6 +9,7 @@ import UIKit
 
 class LikeControl: UIControl {
     @IBOutlet var likePicture: UIImageView!
+
     var isLike:Bool = false
 
     override func awakeFromNib() {

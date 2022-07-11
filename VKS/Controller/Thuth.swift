@@ -10,15 +10,18 @@ import Foundation
 
 
 struct News {
-    let today = Date.now
-    let formatter1 = DateFormatter()
     var dateAndTimePost: String
+
     let avatarImage: UIImage?
     let authorsNameTruthPost: String
     let textPost: String
     let imagePost: UIImage?
+
+
 }
 
 
+//formatter1.dateStyle = .short
+//formatter1.timeStyle = .medium
 
 
