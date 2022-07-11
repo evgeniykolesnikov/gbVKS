@@ -27,6 +27,7 @@
 		449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE762872007A00BD477A /* AllUnionsCell.swift */; };
 		449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */; };
 		44AB232D2872F78400B96A9B /* ComradeImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */; };
+		44E315DB287C594D0092873E /* Formators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E315DA287C594C0092873E /* Formators.swift */; };
 		44E332652876126000C59555 /* TruthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E332642876126000C59555 /* TruthTableViewController.swift */; };
 		44E332672876156000C59555 /* TruthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E332662876156000C59555 /* TruthTableViewCell.swift */; };
 		44E3326928761D4700C59555 /* Thuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3326828761D4700C59555 /* Thuth.swift */; };
@@ -55,6 +56,7 @@
 		449BAE762872007A00BD477A /* AllUnionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUnionsCell.swift; sourceTree = "<group>"; };
 		449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeImagesCollectionViewController.swift; sourceTree = "<group>"; };
 		44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		44E315DA287C594C0092873E /* Formators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formators.swift; sourceTree = "<group>"; };
 		44E332642876126000C59555 /* TruthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruthTableViewController.swift; path = VKS/Resourse/TruthTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		44E332662876156000C59555 /* TruthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruthTableViewCell.swift; path = VKS/Resourse/TruthTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		44E3326828761D4700C59555 /* Thuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Thuth.swift; path = VKS/Controller/Thuth.swift; sourceTree = SOURCE_ROOT; };
@@ -96,6 +98,7 @@
 				44AB232E28731F4200B96A9B /* Controller */,
 				44AB233028731FA500B96A9B /* View */,
 				44AB232F28731F9000B96A9B /* Model */,
+				44E315D9287C594C0092873E /* utilitys */,
 				443C89EC285F4EEB0004A5C7 /* Info.plist */,
 			);
 			path = VKS;
@@ -148,6 +151,14 @@
 				443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */,
 			);
 			path = Resourse;
+			sourceTree = "<group>";
+		};
+		44E315D9287C594C0092873E /* utilitys */ = {
+			isa = PBXGroup;
+			children = (
+				44E315DA287C594C0092873E /* Formators.swift */,
+			);
+			path = utilitys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */,
 				449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */,
 				44E3326928761D4700C59555 /* Thuth.swift in Sources */,
+				44E315DB287C594D0092873E /* Formators.swift in Sources */,
 				449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */,
 				445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */,
 				445B3D5928707704001EE1DC /* Comrades.swift in Sources */,

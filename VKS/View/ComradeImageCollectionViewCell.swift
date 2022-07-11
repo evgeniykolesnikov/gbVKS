@@ -8,6 +8,8 @@
 import UIKit
 
 class ComradeImageCollectionViewCell: UICollectionViewCell {
-    
+
+    // MARK: - IBOutlet
+
     @IBOutlet var imageComrade: UIImageView!
 }

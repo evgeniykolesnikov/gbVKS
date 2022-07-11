@@ -9,6 +9,8 @@ import UIKit
 
 class TruthTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlet
+    
     @IBOutlet var avatarShadowImage: UIView!
     @IBOutlet var avatarImage: UIImageView!
     @IBOutlet var authorsNameTruthPost: UILabel!
@@ -17,7 +19,6 @@ class TruthTableViewCell: UITableViewCell {
     @IBOutlet var imagePost: UIImageView!
     @IBOutlet var likeParentView: UIView!
     @IBOutlet var likeImageView: UIImageView!
-
     @IBOutlet var likeControl: LikeControl!
     @IBOutlet var container: UIView!
 

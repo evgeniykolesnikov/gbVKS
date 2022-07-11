@@ -10,15 +10,9 @@ import Foundation
 
 class TruthTableViewController: UITableViewController {
     let today = Date.now
-let dateFormator: DateFormatter = {
-        let df = DateFormatter()
-        df.dateFormat = "EEEE dd.MM.yyyy HH:mm"
-        df.timeZone = TimeZone.current
-        return df
-    }()
 
     let myNews = [
-        News(dateAndTimePost: dateFormator.string(from: Date.now), avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
+        News(dateAndTimePost: Formators.dateFormator.string(from: Date.now), avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
         News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
         News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
         News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),

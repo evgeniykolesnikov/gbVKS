@@ -8,6 +8,9 @@
 import UIKit
 
 class LikeControl: UIControl {
+    
+    // MARK: - IBOutlet
+
     @IBOutlet var likePicture: UIImageView!
 
     var isLike:Bool = false

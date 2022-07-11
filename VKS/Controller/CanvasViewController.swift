@@ -9,6 +9,8 @@ import UIKit
 
 class CanvasViewController: UIViewController {
 
+    // MARK: - IBAction
+
     @IBOutlet var drawingController: DrawinghControl!
 
     override func viewDidLoad() {

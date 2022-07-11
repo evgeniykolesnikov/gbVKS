@@ -40,6 +40,8 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
+    // MARK: - IBAction
+
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if loginTextField.text == "" &&
             passwordTextField.text == "" {

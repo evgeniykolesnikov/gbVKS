@@ -9,6 +9,8 @@ import UIKit
 
 class ComradesCell: UITableViewCell {
 
+    // MARK: - IBOutlet
+
     @IBOutlet var shadowAvatarComrade: UIView!
     @IBOutlet var avatarComrade: UIImageView!
     @IBOutlet var nameComradeLabel: UILabel!

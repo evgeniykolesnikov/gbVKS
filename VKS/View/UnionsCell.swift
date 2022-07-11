@@ -9,6 +9,8 @@ import UIKit
 
 class UnionsCell: UITableViewCell {
 
+    // MARK: - IBOutlet
+    
     @IBOutlet var nameUnionLabel: UILabel!
     @IBOutlet var imageUnion: UIImageView!
     
