@@ -23,6 +23,8 @@ class FavoriteUnionsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(UINib(nibName: "UnionXIBTableViewCell", bundle: nil), forCellReuseIdentifier: "UnionXib")
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -44,13 +46,13 @@ class FavoriteUnionsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UnionsCell",
-                                                       for: indexPath) as? UnionsCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UnionXib",
+                                                       for: indexPath) as? UnionXIBTableViewCell else {
             preconditionFailure("Error")
         }
 
-        cell.nameUnionLabel.text = unions[indexPath.row].name
-        cell.imageUnion.image = unions[indexPath.row].image
+        cell.unionLabelView.text = unions[indexPath.row].name
+        cell.unionImageView.image = unions[indexPath.row].image
 
         return cell
     }

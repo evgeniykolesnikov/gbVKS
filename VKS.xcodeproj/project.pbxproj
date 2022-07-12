@@ -31,6 +31,8 @@
 		44E332652876126000C59555 /* TruthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E332642876126000C59555 /* TruthTableViewController.swift */; };
 		44E332672876156000C59555 /* TruthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E332662876156000C59555 /* TruthTableViewCell.swift */; };
 		44E3326928761D4700C59555 /* Thuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3326828761D4700C59555 /* Thuth.swift */; };
+		44FDD9F7287D60BB00F42668 /* UnionXIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */; };
+		44FDD9F8287D60BB00F42668 /* UnionXIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		44E332642876126000C59555 /* TruthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruthTableViewController.swift; path = VKS/Resourse/TruthTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		44E332662876156000C59555 /* TruthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruthTableViewCell.swift; path = VKS/Resourse/TruthTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		44E3326828761D4700C59555 /* Thuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Thuth.swift; path = VKS/Controller/Thuth.swift; sourceTree = SOURCE_ROOT; };
+		44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionXIBTableViewCell.swift; sourceTree = "<group>"; };
+		44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnionXIBTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		44AB233028731FA500B96A9B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44FDD9F9287D60C800F42668 /* UnionXIB */,
 				447C3E5D2876FD0200E54742 /* LikeControl.swift */,
 				4449142428743B1F00FBBDB1 /* DrawinghControl.swift */,
 				44AB232C2872F78400B96A9B /* ComradeImageCollectionViewCell.swift */,
@@ -159,6 +164,15 @@
 				44E315DA287C594C0092873E /* Formators.swift */,
 			);
 			path = utilitys;
+			sourceTree = "<group>";
+		};
+		44FDD9F9287D60C800F42668 /* UnionXIB */ = {
+			isa = PBXGroup;
+			children = (
+				44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */,
+				44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */,
+			);
+			path = UnionXIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443C89EB285F4EEB0004A5C7 /* LaunchScreen.storyboard in Resources */,
+				44FDD9F8287D60BB00F42668 /* UnionXIBTableViewCell.xib in Resources */,
 				443C89E8285F4EEB0004A5C7 /* Assets.xcassets in Resources */,
 				443C89E6285F4EEA0004A5C7 /* Main.storyboard in Resources */,
 			);
@@ -251,6 +266,7 @@
 				445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */,
 				445B3D5928707704001EE1DC /* Comrades.swift in Sources */,
 				44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */,
+				44FDD9F7287D60BB00F42668 /* UnionXIBTableViewCell.swift in Sources */,
 				445B3D5128706483001EE1DC /* FavoriteComradesTableViewController.swift in Sources */,
 				445B3D53287064FB001EE1DC /* FavoriteUnionsTableViewController.swift in Sources */,
 			);

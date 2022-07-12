@@ -21,7 +21,7 @@ class ComradesCell: UITableViewCell {
 
         avatarComrade.layer.cornerRadius = avatarComrade.bounds.width / 2
         shadowAvatarComrade.layer.cornerRadius = shadowAvatarComrade.bounds.width / 2
-        shadowAvatarComrade.layer.backgroundColor != UIColor.clear.cgColor
+        shadowAvatarComrade.layer.backgroundColor = UIColor.clear.cgColor
         shadowAvatarComrade.layer.shadowColor = UIColor.black.cgColor
         shadowAvatarComrade.layer.shadowOffset = CGSize.zero
         shadowAvatarComrade.layer.shadowRadius = 5

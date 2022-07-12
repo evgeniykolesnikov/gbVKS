@@ -34,6 +34,8 @@ class AllUnionsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.register(UINib(nibName: "UnionXIBTableViewCell", bundle: nil), forCellReuseIdentifier: "UnionXib")
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -55,13 +57,13 @@ class AllUnionsTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AllUnionsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UnionXib", for: indexPath) as! UnionXIBTableViewCell
 
-        var content = cell.defaultContentConfiguration()
-        content.text = unions[indexPath.row].name
-        content.image = unions[indexPath.row].image
+        let content = cell
+        content.unionLabelView.text = unions[indexPath.row].name
+        content.unionImageView.image = unions[indexPath.row].image
 
-        cell.contentConfiguration = content
+        cell.contentConfiguration = content as? UIContentConfiguration
 
         return cell
     }
