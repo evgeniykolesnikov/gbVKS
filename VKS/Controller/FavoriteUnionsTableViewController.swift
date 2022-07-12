@@ -10,20 +10,24 @@ import UIKit
 class FavoriteUnionsTableViewController: UITableViewController {
 
     var unions = [
-        Unions(name: "Союз Писателей", image: UIImage(systemName: "pencil.circle")),
-        Unions(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
-        Unions(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
-        Unions(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
-        Unions(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
-        Unions(name: "Союз слесарей", image: UIImage(systemName: "gear")),
-        Unions(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
-        Unions(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
-
+        Union(name: "Союз Писателей", image: UIImage(systemName: "pencil.circle")),
+        Union(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
+        Union(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
+        Union(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
+        Union(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
+        Union(name: "Союз слесарей", image: UIImage(systemName: "gear")),
+        Union(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
+        Union(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
     ]
+
+    var sortedUnions = [Character: [Union]]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "UnionXIBTableViewCell", bundle: nil), forCellReuseIdentifier: "UnionXib")
+
+        self.sortedUnions = sort(unions: unions)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,16 +36,38 @@ class FavoriteUnionsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    private func sort(unions: [Union]) -> [Character: [Union]] {
+        var unionsDict = [Character: [Union]]()
+
+        unions.forEach() { union in
+
+            guard let firstChar = union.name.first else {return }
+
+            if var thisCharUnions = unionsDict[firstChar] {
+                thisCharUnions.append(union)
+                unionsDict[firstChar] = thisCharUnions
+            } else {
+                unionsDict[firstChar] = [union]
+            }
+        }
+
+        return unionsDict
+    }
+
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return sortedUnions.keys.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return unions.count
+        let keySorted = sortedUnions.keys.sorted()
+        let unions = sortedUnions[keySorted[section]]?.count ?? 0
+
+        return unions
     }
 
 
@@ -51,8 +77,14 @@ class FavoriteUnionsTableViewController: UITableViewController {
             preconditionFailure("Error")
         }
 
-        cell.unionLabelView.text = unions[indexPath.row].name
-        cell.unionImageView.image = unions[indexPath.row].image
+        let firstChar = sortedUnions.keys.sorted()[indexPath.section]
+
+        let unions = sortedUnions[firstChar]!
+
+        let union: Union = unions[indexPath.row]
+
+        cell.unionLabelView.text = union.name
+        cell.unionImageView.image = union.image
 
         return cell
     }
@@ -67,8 +99,12 @@ class FavoriteUnionsTableViewController: UITableViewController {
             unions.append(union)
 
             tableView.reloadData()
-            }}
+            }
+        }
+    }
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        String(sortedUnions.keys.sorted()[section])
     }
     /*
     // Override to support conditional editing of the table view.

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Unions {
+class Union {
 
     let name: String
     let image: UIImage?

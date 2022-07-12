@@ -20,14 +20,14 @@ class AllUnionsTableViewController: UITableViewController {
     }
 
     let unions = [
-        Unions(name: "Союз Писателей1", image: UIImage(systemName: "pencil.circle")),
-        Unions(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
-        Unions(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
-        Unions(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
-        Unions(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
-        Unions(name: "Союз слесарей", image: UIImage(systemName: "gear")),
-        Unions(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
-        Unions(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
+        Union(name: "Союз Писателей1", image: UIImage(systemName: "pencil.circle")),
+        Union(name: "Профсоюз Курьер", image: UIImage(systemName: "bicycle")),
+        Union(name: "Профсоюз работников высшей школы и научных учреждений", image: UIImage(systemName: "brain")),
+        Union(name: "Профсоюз актеров театра и кино", image: UIImage(systemName: "paintpalette")),
+        Union(name: "Союз шоферов", image: UIImage(systemName: "car.fill")),
+        Union(name: "Союз слесарей", image: UIImage(systemName: "gear")),
+        Union(name: "Профсоюза работников медико-санитарного труда", image: UIImage(systemName: "heart")),
+        Union(name: "Профсоюза работников народного образования и науки", image: UIImage(systemName: "brain.head.profile")),
 
     ]
 
