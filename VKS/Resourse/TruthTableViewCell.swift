@@ -31,7 +31,7 @@ class TruthTableViewCell: UITableViewCell {
 
         avatarImage.layer.cornerRadius = avatarImage.bounds.width / 2
         avatarShadowImage.layer.cornerRadius = avatarShadowImage.bounds.width / 2
-        avatarShadowImage.layer.backgroundColor = UIColor.clear.cgColor
+        avatarShadowImage.layer.backgroundColor != UIColor.clear.cgColor
         avatarShadowImage.layer.shadowColor = UIColor.black.cgColor
         avatarShadowImage.layer.shadowOffset = CGSize.zero
         avatarShadowImage.layer.shadowRadius = 5
