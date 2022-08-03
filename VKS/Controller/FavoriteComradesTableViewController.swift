@@ -25,8 +25,14 @@ class FavoriteComradesTableViewController: UITableViewController {
         Comrade(name: "Булгаков Михаил Афанасьевич", image: UIImage(named: "sourseImageComradeBulgakovMikhailAfanasyevich"), comrade: newComrade),
     ]
 
+    var sortedComrade = [Character: [Comrade]]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.register(UINib(nibName: "ComradeTableViewCell", bundle: nil), forCellReuseIdentifier: "ComradeXib")
+
+        self.sortedComrade = sort(comrades: myComrades)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,28 +41,55 @@ class FavoriteComradesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    private func sort(comrades: [Comrade]) -> [Character: [Comrade]] {
+        var comradesDict = [Character: [Comrade]]()
+
+        comrades.forEach() { comrade in
+
+            guard let firstChar = comrade.name.first else {return }
+
+            if var thisCharComrades = comradesDict[firstChar] {
+                thisCharComrades.append(comrade)
+                comradesDict[firstChar] = thisCharComrades
+            } else {
+                comradesDict[firstChar] = [comrade]
+            }
+        }
+
+        return comradesDict
+    }
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return sortedComrade.keys.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return myComrades.count
+        let keySorted = sortedComrade.keys.sorted()
+        let comrades = sortedComrade[keySorted[section]]?.count ?? 0
+
+        return comrades
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ComradesCell",
-                                                       for: indexPath) as? ComradesCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ComradeXib",
+                                                       for: indexPath) as? ComradeTableViewCell else {
             preconditionFailure("Error")
         }
 
-        cell.nameComradeLabel.text = myComrades[indexPath.row].name
-        cell.avatarComrade.image = myComrades[indexPath.row].image
+        let firstChar = sortedComrade.keys.sorted()[indexPath.section]
+
+        let comrades = sortedComrade[firstChar]!
+
+        let comrade: Comrade = comrades[indexPath.row]
+
+        cell.comradeLabel.text = comrade.name
+        cell.comradeImageView.image = comrade.image
 
 
         return cell
