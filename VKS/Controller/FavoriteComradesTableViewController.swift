@@ -17,12 +17,12 @@ class FavoriteComradesTableViewController: UITableViewController {
         Comrade(name: "Сергей Анатольевич Курёхин", image: UIImage(named: "sourseImageComradeSergeiAnatolievichKuryokhin"), comrade: newComrade),
         Comrade(name: "Виктор Робертович Цой", image: UIImage(named: "sourseImageComradeViktorRobertovichTsoi"), comrade: newComrade),
         Comrade(name: "Георгий Константинович Жуков", image: UIImage(named: "sourseImageComradeGeorgyKonstantinovichZhukov"), comrade: newComrade),
-        Comrade(name: "Маяковский Владимир Владимирович", image: UIImage(named: "sourseImageComradeMayakovskyVladimirVladimirovich"), comrade: newComrade),
-        Comrade(name: "Пастернак Борис Леонидович", image: UIImage(named: "sourseImageComradePasternakBorisLeonidovich"), comrade: newComrade),
-        Comrade(name: "Цветаева Марина Ивановна", image: UIImage(named: "sourseImageComradeTsvetaevaMarinaIvanovna"), comrade: newComrade),
-        Comrade(name: "Ахматова Анна Андреевна", image: UIImage(named: "sourseImageComradeAkhmatovaAnnaAndreevna"), comrade: newComrade),
-        Comrade(name: "Рождественский Роберт Иванович", image: UIImage(named: "sourseImageComradeRozhdestvenskyRobertIvanovich"), comrade: newComrade),
-        Comrade(name: "Булгаков Михаил Афанасьевич", image: UIImage(named: "sourseImageComradeBulgakovMikhailAfanasyevich"), comrade: newComrade),
+        Comrade(name: "Владимир Владимирович Маяковский", image: UIImage(named: "sourseImageComradeMayakovskyVladimirVladimirovich"), comrade: newComrade),
+        Comrade(name: "Борис Леонидович Пастернак", image: UIImage(named: "sourseImageComradePasternakBorisLeonidovich"), comrade: newComrade),
+        Comrade(name: "Марина Ивановна Цветаева", image: UIImage(named: "sourseImageComradeTsvetaevaMarinaIvanovna"), comrade: newComrade),
+        Comrade(name: "Анна Андреевна Ахматова", image: UIImage(named: "sourseImageComradeAkhmatovaAnnaAndreevna"), comrade: newComrade),
+        Comrade(name: "Роберт Иванович Рождественский", image: UIImage(named: "sourseImageComradeRozhdestvenskyRobertIvanovich"), comrade: newComrade),
+        Comrade(name: "Михаил Афанасьевич Булгаков", image: UIImage(named: "sourseImageComradeBulgakovMikhailAfanasyevich"), comrade: newComrade),
     ]
 
     var sortedComrade = [Character: [Comrade]]()
@@ -94,6 +94,7 @@ class FavoriteComradesTableViewController: UITableViewController {
 
         return cell
     }
+    // FIXME: The sega broke down to the new picture due to the fact that XIB Cell added to TableViewController
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
@@ -105,6 +106,15 @@ class FavoriteComradesTableViewController: UITableViewController {
             destinationVC.comradImages.append(myComrades[indexPath.row].image!)
             destinationVC.arrayComrade = myComrades[indexPath.row].comrade
         }
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        String(sortedComrade.keys.sorted()[section])
+        
+    }
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        (view as! UITableViewHeaderFooterView).contentView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.white
     }
     /*
     // Override to support conditional editing of the table view.

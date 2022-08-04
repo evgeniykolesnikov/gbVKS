@@ -14,13 +14,14 @@ class TruthTableViewController: UITableViewController {
     let myNews = [
         News(dateAndTimePost: Formators.dateFormator.string(from: Date.now), avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
         News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
-        News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
+        News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "souzShip")),
         News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
         News(dateAndTimePost: "12 апреля 1961 в 09:07", avatarImage: UIImage(named: "sourseImageComradeYuriAlekseyevichGagarin"), authorsNameTruthPost: "Юрий Алексеевич Гагарин", textPost: "Поехали!!!", imagePost: UIImage(named: "newsGagarinStart")),
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

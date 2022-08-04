@@ -21,13 +21,21 @@ class TruthTableViewCell: UITableViewCell {
     @IBOutlet var likeImageView: UIImageView!
     @IBOutlet var likeControl: LikeControl!
     @IBOutlet var container: UIView!
+    @IBOutlet var containerLike: UIView!
+    @IBOutlet var likeImageViewFront: UIImageView!
 
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        // FIXME: CornerRadius displayed only when you click on Cell
+        container.layer.cornerRadius = 20
+        container.layer.backgroundColor = UIColor.white.cgColor
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         tap.numberOfTapsRequired = 2
         container.addGestureRecognizer(tap)
+
 
         avatarImage.layer.cornerRadius = avatarImage.bounds.width / 2
         avatarShadowImage.layer.cornerRadius = avatarShadowImage.bounds.width / 2
@@ -37,6 +45,9 @@ class TruthTableViewCell: UITableViewCell {
         avatarShadowImage.layer.shadowRadius = 5
         avatarShadowImage.layer.shadowOpacity = 0.9
         avatarShadowImage.clipsToBounds = false
+        containerLike.layer.backgroundColor = UIColor.gray.withAlphaComponent(0.5).cgColor
+        containerLike.layer.cornerRadius = containerLike.bounds.width / 4
+
         
     }
 
