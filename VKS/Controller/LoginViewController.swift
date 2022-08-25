@@ -9,6 +9,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    let session = Session.shared
+
     //MARK: - Properties
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!

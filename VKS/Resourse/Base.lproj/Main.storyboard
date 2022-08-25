@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSt-fa-Whe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -148,6 +148,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWJ-OP-6le" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2322" y="1254"/>
+        </scene>
+        <!--Sc First View Controller-->
+        <scene sceneID="AYa-DF-cI2">
+            <objects>
+                <viewController id="UrG-4K-DEu" customClass="ScFirstViewController" customModule="VKS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3VY-nD-wpS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLh-Cj-pIE">
+                                <rect key="frame" x="173.5" y="459.5" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="goP-sY-ND2" kind="show" id="XgY-8U-x8q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e5b-Gd-qWf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aLh-Cj-pIE" firstAttribute="centerX" secondItem="e5b-Gd-qWf" secondAttribute="centerX" id="qqM-Gq-cMT"/>
+                            <constraint firstItem="aLh-Cj-pIE" firstAttribute="centerY" secondItem="e5b-Gd-qWf" secondAttribute="centerY" id="zTU-8y-rPm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="775-SQ-xob"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhM-Hv-f7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836.2318840579715" y="2129.4642857142858"/>
+        </scene>
+        <!--Sc Second View Controller-->
+        <scene sceneID="d9H-ZL-AD7">
+            <objects>
+                <viewController id="goP-sY-ND2" customClass="ScSecondViewController" customModule="VKS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWc-Wx-fCh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Kq9-vC-htn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="euE-e6-4Ve"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQg-kV-y2P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3797.1014492753625" y="2128.7946428571427"/>
         </scene>
         <!--Favorite Comrades Table View Controller-->
         <scene sceneID="1cD-iG-zMe">
@@ -584,6 +630,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5n-8B-bxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3494" y="1254"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cy3-ji-0H0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSt-fa-Whe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Sf-Hd-VCP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UrG-4K-DEu" kind="relationship" relationship="rootViewController" id="hRo-Vn-wix"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ht-q9-fJ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926.0869565217392" y="2129.4642857142858"/>
         </scene>
     </scenes>
     <resources>
