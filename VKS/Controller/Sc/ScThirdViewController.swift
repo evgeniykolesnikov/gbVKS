@@ -8,7 +8,7 @@
 import UIKit
 
 protocol Observer: AnyObject {
-    func getContent(content: Observable)
+    func getContent(content: Center)
 }
 
 protocol Observable {
@@ -19,7 +19,11 @@ protocol Observable {
 
 class Center: Observable{
 
-    var content: String = ""
+    var state: String = "" {
+        didSet{
+            notify(content: state)
+        }
+    }
     private var observers = [Observer]()
 
 
@@ -42,23 +46,51 @@ class Center: Observable{
 
 }
 
-class ScThirdViewController: UIViewController {
+class Subscriber: Observer{
 
+
+
+    var name: String
+
+    init(name: String){
+        self.name = name
+    }
+    func getContent(content: Center) {
+        print("User \(name) get content \(content.state)")
+    }
+
+}
+
+class ScThirdViewController: UIViewController {
+let center = Center()
+
+    let userOne = Subscriber(name: "Itan")
+    let userTwo = Subscriber(name: "Hunt")
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func sendAction(_ sender: Any) {
+        center.state = "New content"
     }
-    */
 
+    @IBAction func userOneFollow(_ sender: UISwitch) {
+        if sender.isOn{
+            center.add(observer: userOne)
+        } else {
+            center.remove(observer: userOne)
+        }
+
+    }
+
+    @IBAction func userTwoFollow(_ sender: UISwitch) {
+        if sender.isOn{
+            center.add(observer: userTwo)
+        } else {
+            center.remove(observer: userTwo)
+        }
+    }
 }
