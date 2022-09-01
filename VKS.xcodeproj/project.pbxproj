@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440838DE28C0F12800545DC1 /* ScUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440838DD28C0F12800545DC1 /* ScUrlViewController.swift */; };
 		443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */; };
 		443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */; };
 		443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440838DD28C0F12800545DC1 /* ScUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScUrlViewController.swift; sourceTree = "<group>"; };
 		443C89DB285F4EEA0004A5C7 /* VKS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				44E4F42A28B7BDD2002390B2 /* ScThirdViewController.swift */,
 				44E4F42C28B7E9F2002390B2 /* ScForthViewController.swift */,
 				44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */,
+				440838DD28C0F12800545DC1 /* ScUrlViewController.swift */,
 			);
 			path = Sc;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				44E315DB287C594D0092873E /* Formators.swift in Sources */,
 				449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */,
 				44C17DCD287D89D00010C438 /* ComradeTableViewCell.swift in Sources */,
+				440838DE28C0F12800545DC1 /* ScUrlViewController.swift in Sources */,
 				445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */,
 				445B3D5928707704001EE1DC /* Comrades.swift in Sources */,
 				44406E40285FB2F900C5E424 /* MainViewController.swift in Sources */,
