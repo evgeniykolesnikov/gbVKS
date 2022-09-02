@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		440838DE28C0F12800545DC1 /* ScUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440838DD28C0F12800545DC1 /* ScUrlViewController.swift */; };
+		440838E028C1358900545DC1 /* ScUrlSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440838DF28C1358900545DC1 /* ScUrlSecondViewController.swift */; };
 		443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */; };
 		443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */; };
 		443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */; };
@@ -41,10 +42,13 @@
 		44E4F42F28B7EB14002390B2 /* ScFifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */; };
 		44FDD9F7287D60BB00F42668 /* UnionXIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */; };
 		44FDD9F8287D60BB00F42668 /* UnionXIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */; };
+		F911ADD45EBAD2598AF96742 /* Pods_VKS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF486DE98C44F3990E06759B /* Pods_VKS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		381FD5D1A78BFAD5E173EC41 /* Pods-VKS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKS.release.xcconfig"; path = "Target Support Files/Pods-VKS/Pods-VKS.release.xcconfig"; sourceTree = "<group>"; };
 		440838DD28C0F12800545DC1 /* ScUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScUrlViewController.swift; sourceTree = "<group>"; };
+		440838DF28C1358900545DC1 /* ScUrlSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScUrlSecondViewController.swift; sourceTree = "<group>"; };
 		443C89DB285F4EEA0004A5C7 /* VKS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScFifthViewController.swift; sourceTree = "<group>"; };
 		44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionXIBTableViewCell.swift; sourceTree = "<group>"; };
 		44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnionXIBTableViewCell.xib; sourceTree = "<group>"; };
+		5A9874B281710B0115C053BB /* Pods-VKS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKS.debug.xcconfig"; path = "Target Support Files/Pods-VKS/Pods-VKS.debug.xcconfig"; sourceTree = "<group>"; };
+		EF486DE98C44F3990E06759B /* Pods_VKS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,17 +93,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F911ADD45EBAD2598AF96742 /* Pods_VKS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19BBC1D2C88D64F5D04516DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF486DE98C44F3990E06759B /* Pods_VKS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		443C89D2285F4EEA0004A5C7 = {
 			isa = PBXGroup;
 			children = (
 				443C89DD285F4EEA0004A5C7 /* VKS */,
 				443C89DC285F4EEA0004A5C7 /* Products */,
+				D0DD9B97CB7D650D8C7942E0 /* Pods */,
+				19BBC1D2C88D64F5D04516DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +202,7 @@
 				44E4F42C28B7E9F2002390B2 /* ScForthViewController.swift */,
 				44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */,
 				440838DD28C0F12800545DC1 /* ScUrlViewController.swift */,
+				440838DF28C1358900545DC1 /* ScUrlSecondViewController.swift */,
 			);
 			path = Sc;
 			sourceTree = "<group>";
@@ -215,6 +233,15 @@
 			path = UnionXIB;
 			sourceTree = "<group>";
 		};
+		D0DD9B97CB7D650D8C7942E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A9874B281710B0115C053BB /* Pods-VKS.debug.xcconfig */,
+				381FD5D1A78BFAD5E173EC41 /* Pods-VKS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 443C89EF285F4EEB0004A5C7 /* Build configuration list for PBXNativeTarget "VKS" */;
 			buildPhases = (
+				729C5F052E7050D53FA23537 /* [CP] Check Pods Manifest.lock */,
 				443C89D7285F4EEA0004A5C7 /* Sources */,
 				443C89D8285F4EEA0004A5C7 /* Frameworks */,
 				443C89D9285F4EEA0004A5C7 /* Resources */,
+				C6AEC39DE0899A2B8C3C6890 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +312,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		729C5F052E7050D53FA23537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AEC39DE0899A2B8C3C6890 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKS/Pods-VKS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKS/Pods-VKS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VKS/Pods-VKS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		443C89D7285F4EEA0004A5C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -294,6 +365,7 @@
 				443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */,
 				44B9B74A28B698F7004E3A7C /* ScFirstViewController.swift in Sources */,
 				449BAE6D2871CDDF00BD477A /* UnionsCell.swift in Sources */,
+				440838E028C1358900545DC1 /* ScUrlSecondViewController.swift in Sources */,
 				443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */,
 				449BAE6F2871D06700BD477A /* Union.swift in Sources */,
 				44B9B74C28B6990F004E3A7C /* ScSecondViewController.swift in Sources */,
@@ -458,6 +530,7 @@
 		};
 		443C89F0285F4EEB0004A5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9874B281710B0115C053BB /* Pods-VKS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +559,7 @@
 		};
 		443C89F1285F4EEB0004A5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381FD5D1A78BFAD5E173EC41 /* Pods-VKS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
