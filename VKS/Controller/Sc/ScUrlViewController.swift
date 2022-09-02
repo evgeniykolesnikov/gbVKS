@@ -37,7 +37,7 @@ class ScUrlViewController: UIViewController {
             } else {
                 let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments)
 
-                print(json)
+                //print(json)
             }
         }
         task.resume()

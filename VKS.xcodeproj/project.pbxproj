@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		440838DE28C0F12800545DC1 /* ScUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440838DD28C0F12800545DC1 /* ScUrlViewController.swift */; };
 		440838E028C1358900545DC1 /* ScUrlSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440838DF28C1358900545DC1 /* ScUrlSecondViewController.swift */; };
+		443283AF28C21F5B00CB2172 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443283AE28C21F5B00CB2172 /* WebViewController.swift */; };
 		443C89DF285F4EEA0004A5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */; };
 		443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */; };
 		443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */; };
@@ -49,6 +50,7 @@
 		381FD5D1A78BFAD5E173EC41 /* Pods-VKS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKS.release.xcconfig"; path = "Target Support Files/Pods-VKS/Pods-VKS.release.xcconfig"; sourceTree = "<group>"; };
 		440838DD28C0F12800545DC1 /* ScUrlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScUrlViewController.swift; sourceTree = "<group>"; };
 		440838DF28C1358900545DC1 /* ScUrlSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScUrlSecondViewController.swift; sourceTree = "<group>"; };
+		443283AE28C21F5B00CB2172 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		443C89DB285F4EEA0004A5C7 /* VKS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443C89DE285F4EEA0004A5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443C89E0285F4EEA0004A5C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */,
 				440838DD28C0F12800545DC1 /* ScUrlViewController.swift */,
 				440838DF28C1358900545DC1 /* ScUrlSecondViewController.swift */,
+				443283AE28C21F5B00CB2172 /* WebViewController.swift */,
 			);
 			path = Sc;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				44B9B74828B6922B004E3A7C /* Session.swift in Sources */,
 				44E4F42F28B7EB14002390B2 /* ScFifthViewController.swift in Sources */,
 				44FDD9F7287D60BB00F42668 /* UnionXIBTableViewCell.swift in Sources */,
+				443283AF28C21F5B00CB2172 /* WebViewController.swift in Sources */,
 				445B3D5128706483001EE1DC /* FavoriteComradesTableViewController.swift in Sources */,
 				445B3D53287064FB001EE1DC /* FavoriteUnionsTableViewController.swift in Sources */,
 			);
