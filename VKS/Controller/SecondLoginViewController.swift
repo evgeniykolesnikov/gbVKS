@@ -11,7 +11,7 @@ import WebKit
 class SecondLoginViewController: UIViewController {
 
     let session = Session.shared
-    var secondVC: LoginViewController?
+    var mainVC: UITabBarController?
 
     @IBOutlet weak var loginWebView: WKWebView!
     let appId = "51416207"
@@ -64,9 +64,9 @@ extension SecondLoginViewController: WKNavigationDelegate {
             }
         if let token = params["access_token"] {
             self.session.token = token
-            secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginVC") as?
-            LoginViewController
-            self.view.insertSubview((secondVC?.view)!, at: 9)
+            mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainPage") as?
+            UITabBarController
+            self.view.insertSubview((mainVC?.view)!, at: 9)
         }
         decisionHandler(.cancel)
     }

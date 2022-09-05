@@ -23,6 +23,7 @@
 		445B3D53287064FB001EE1DC /* FavoriteUnionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */; };
 		445B3D5728707045001EE1DC /* ComradesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5628707045001EE1DC /* ComradesCell.swift */; };
 		445B3D5928707704001EE1DC /* Comrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B3D5828707704001EE1DC /* Comrades.swift */; };
+		446CC0B528C683C80003FD81 /* LogInToVkIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446CC0B428C683C80003FD81 /* LogInToVkIdViewController.swift */; };
 		447C3E5E2876FD0200E54742 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447C3E5D2876FD0200E54742 /* LikeControl.swift */; };
 		449BAE6D2871CDDF00BD477A /* UnionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE6C2871CDDF00BD477A /* UnionsCell.swift */; };
 		449BAE6F2871D06700BD477A /* Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BAE6E2871D06700BD477A /* Union.swift */; };
@@ -67,6 +68,7 @@
 		445B3D52287064FB001EE1DC /* FavoriteUnionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUnionsTableViewController.swift; sourceTree = "<group>"; };
 		445B3D5628707045001EE1DC /* ComradesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradesCell.swift; sourceTree = "<group>"; };
 		445B3D5828707704001EE1DC /* Comrades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comrades.swift; sourceTree = "<group>"; };
+		446CC0B428C683C80003FD81 /* LogInToVkIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToVkIdViewController.swift; sourceTree = "<group>"; };
 		447C3E5D2876FD0200E54742 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LikeControl.swift; path = VKS/Resourse/LikeControl.swift; sourceTree = SOURCE_ROOT; };
 		449BAE6C2871CDDF00BD477A /* UnionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionsCell.swift; sourceTree = "<group>"; };
 		449BAE6E2871D06700BD477A /* Union.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Union.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				44B9B74D28B6991B004E3A7C /* Sc */,
 				443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */,
+				446CC0B428C683C80003FD81 /* LogInToVkIdViewController.swift */,
 				4415EB5F28C614A00028CE16 /* SecondLoginViewController.swift */,
 				449BAE782872094200BD477A /* ComradeImagesCollectionViewController.swift */,
 				44406E3F285FB2F900C5E424 /* MainViewController.swift */,
@@ -381,6 +384,7 @@
 				443C89E1285F4EEA0004A5C7 /* SceneDelegate.swift in Sources */,
 				4415EB6028C614A00028CE16 /* SecondLoginViewController.swift in Sources */,
 				449BAE752871FFD100BD477A /* AllUnionsTableViewController.swift in Sources */,
+				446CC0B528C683C80003FD81 /* LogInToVkIdViewController.swift in Sources */,
 				449BAE792872094200BD477A /* ComradeImagesCollectionViewController.swift in Sources */,
 				44E4F42B28B7BDD2002390B2 /* ScThirdViewController.swift in Sources */,
 				44E3326928761D4700C59555 /* Thuth.swift in Sources */,
