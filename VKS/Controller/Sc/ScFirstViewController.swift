@@ -13,7 +13,7 @@ class ScFirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(session.name)
+//        print(session.name)
         // Do any additional setup after loading the view.
     }
     

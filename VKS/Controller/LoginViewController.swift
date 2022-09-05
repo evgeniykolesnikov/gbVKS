@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(#function)
+        print(session.token)
         passwordTextField.isSecureTextEntry = true
     }
     override func viewWillAppear(_ animated: Bool) {
