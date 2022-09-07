@@ -24,7 +24,9 @@ class TruthTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         service.getFriends(token: session.token)
-        
+        service.getPhotos(token: session.token)
+        service.getGroups(token: session.token)
+        service.groupsSearch(token: session.token)
 
 
 
