@@ -9,6 +9,8 @@ import UIKit
 import Foundation
 
 class TruthTableViewController: UITableViewController {
+    let session = Session.shared
+    let service = Service()
     let today = Date.now
 
     let myNews = [
@@ -21,7 +23,11 @@ class TruthTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        service.getFriends(token: session.token)
         
+
+
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
