@@ -46,6 +46,7 @@
 		44E4F42F28B7EB14002390B2 /* ScFifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */; };
 		44FDD9F7287D60BB00F42668 /* UnionXIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */; };
 		44FDD9F8287D60BB00F42668 /* UnionXIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */; };
+		450998D929C4C4A5006B9B63 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450998D829C4C4A5006B9B63 /* AnimationViewController.swift */; };
 		F911ADD45EBAD2598AF96742 /* Pods_VKS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF486DE98C44F3990E06759B /* Pods_VKS.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		44E4F42E28B7EB14002390B2 /* ScFifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScFifthViewController.swift; sourceTree = "<group>"; };
 		44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionXIBTableViewCell.swift; sourceTree = "<group>"; };
 		44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnionXIBTableViewCell.xib; sourceTree = "<group>"; };
+		450998D829C4C4A5006B9B63 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationViewController.swift; path = VKS/Resourse/AnimationViewController.swift; sourceTree = SOURCE_ROOT; };
 		5A9874B281710B0115C053BB /* Pods-VKS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKS.debug.xcconfig"; path = "Target Support Files/Pods-VKS/Pods-VKS.debug.xcconfig"; sourceTree = "<group>"; };
 		EF486DE98C44F3990E06759B /* Pods_VKS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 		44AB232E28731F4200B96A9B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				450998D829C4C4A5006B9B63 /* AnimationViewController.swift */,
 				44B9B74D28B6991B004E3A7C /* Sc */,
 				443C89E2285F4EEA0004A5C7 /* LoginViewController.swift */,
 				446CC0B428C683C80003FD81 /* LogInToVkIdViewController.swift */,
@@ -373,6 +376,7 @@
 			files = (
 				44E332672876156000C59555 /* TruthTableViewCell.swift in Sources */,
 				44E4F42D28B7E9F2002390B2 /* ScForthViewController.swift in Sources */,
+				450998D929C4C4A5006B9B63 /* AnimationViewController.swift in Sources */,
 				447C3E5E2876FD0200E54742 /* LikeControl.swift in Sources */,
 				443C89E3285F4EEA0004A5C7 /* LoginViewController.swift in Sources */,
 				44B9B74A28B698F7004E3A7C /* ScFirstViewController.swift in Sources */,
