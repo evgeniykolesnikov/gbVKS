@@ -47,6 +47,7 @@
 		44FDD9F7287D60BB00F42668 /* UnionXIBTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */; };
 		44FDD9F8287D60BB00F42668 /* UnionXIBTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */; };
 		450998D929C4C4A5006B9B63 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450998D829C4C4A5006B9B63 /* AnimationViewController.swift */; };
+		450998DB29C50632006B9B63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450998DA29C50632006B9B63 /* LoadingViewController.swift */; };
 		F911ADD45EBAD2598AF96742 /* Pods_VKS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF486DE98C44F3990E06759B /* Pods_VKS.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		44FDD9F5287D60BB00F42668 /* UnionXIBTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionXIBTableViewCell.swift; sourceTree = "<group>"; };
 		44FDD9F6287D60BB00F42668 /* UnionXIBTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnionXIBTableViewCell.xib; sourceTree = "<group>"; };
 		450998D829C4C4A5006B9B63 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationViewController.swift; path = VKS/Resourse/AnimationViewController.swift; sourceTree = SOURCE_ROOT; };
+		450998DA29C50632006B9B63 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		5A9874B281710B0115C053BB /* Pods-VKS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKS.debug.xcconfig"; path = "Target Support Files/Pods-VKS/Pods-VKS.debug.xcconfig"; sourceTree = "<group>"; };
 		EF486DE98C44F3990E06759B /* Pods_VKS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				443C89E4285F4EEA0004A5C7 /* Main.storyboard */,
+				450998DA29C50632006B9B63 /* LoadingViewController.swift */,
 				443C89E7285F4EEB0004A5C7 /* Assets.xcassets */,
 				443C89E9285F4EEB0004A5C7 /* LaunchScreen.storyboard */,
 			);
@@ -397,6 +400,7 @@
 				44E4F42B28B7BDD2002390B2 /* ScThirdViewController.swift in Sources */,
 				44E3326928761D4700C59555 /* Thuth.swift in Sources */,
 				44E315DB287C594D0092873E /* Formators.swift in Sources */,
+				450998DB29C50632006B9B63 /* LoadingViewController.swift in Sources */,
 				449BAE772872007A00BD477A /* AllUnionsCell.swift in Sources */,
 				44C17DCD287D89D00010C438 /* ComradeTableViewCell.swift in Sources */,
 				440838DE28C0F12800545DC1 /* ScUrlViewController.swift in Sources */,

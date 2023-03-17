@@ -15,14 +15,24 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var scrollView: UIScrollView!
-
+    @IBOutlet var secondLoadingCircle: UIImageView!
+    @IBOutlet var thirdLoadingCircle: UIImageView!
+    @IBOutlet var firstLoadingCircle: UIImageView!
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(session.token)
         passwordTextField.isSecureTextEntry = true
+        
+        
+        secondLoadingCircle.layer.opacity = 0
+        thirdLoadingCircle.layer.opacity = 0
+        firstLoadingCircle.layer.opacity = 0
     }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -45,11 +55,22 @@ class LoginViewController: UIViewController {
     // MARK: - IBAction
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.9, delay: 1, options: [.repeat, .autoreverse]) {
+            self.firstLoadingCircle.alpha = 0.8        }
+        
+        UIView.animate(withDuration: 0.9, delay: 1.2, options: [.repeat, .autoreverse]) {
+            self.secondLoadingCircle.alpha = 0.8        }
+        
+        UIView.animate(withDuration: 0.9, delay: 1.3, options: [.repeat, .autoreverse]) {
+            self.thirdLoadingCircle.alpha = 0.8        }
         if loginTextField.text == "" &&
             passwordTextField.text == "" {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+                self.performSegue(withIdentifier: "MainScreeenPresentationSegue1", sender: self)
+                print("Auth succeeded")
+            }
 
-            performSegue(withIdentifier: "MainScreeenPresentationSegue1", sender: self)
-            print("Auth succeeded")
+            
         } else {
             print("Auth failed")
         }
