@@ -14,8 +14,10 @@ class ComradesCell: UITableViewCell {
     @IBOutlet var shadowAvatarComrade: UIView!
     @IBOutlet var avatarComrade: UIImageView!
     @IBOutlet var nameComradeLabel: UILabel!
-
-
+    
+    
+    @IBOutlet var containerViewComrade: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -27,10 +29,11 @@ class ComradesCell: UITableViewCell {
         shadowAvatarComrade.layer.shadowRadius = 5
         shadowAvatarComrade.layer.shadowOpacity = 0.9
         shadowAvatarComrade.clipsToBounds = false
-
+        
     }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
 }

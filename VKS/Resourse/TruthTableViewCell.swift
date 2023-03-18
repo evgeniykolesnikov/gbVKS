@@ -29,7 +29,7 @@ class TruthTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // FIXME: CornerRadius displayed only when you click on Cell
-        container.layer.cornerRadius = 20
+//        container.layer.cornerRadius = 2
         container.layer.backgroundColor = UIColor.white.cgColor
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))

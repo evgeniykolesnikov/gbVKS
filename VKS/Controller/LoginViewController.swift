@@ -26,7 +26,6 @@ class LoginViewController: UIViewController {
         print(session.token)
         passwordTextField.isSecureTextEntry = true
         
-        
         secondLoadingCircle.layer.opacity = 0
         thirdLoadingCircle.layer.opacity = 0
         firstLoadingCircle.layer.opacity = 0
@@ -55,22 +54,20 @@ class LoginViewController: UIViewController {
     // MARK: - IBAction
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.9, delay: 1, options: [.repeat, .autoreverse]) {
+        UIView.animate(withDuration: 0.9, delay: 0, options: [.repeat, .autoreverse]) {
             self.firstLoadingCircle.alpha = 0.8        }
         
-        UIView.animate(withDuration: 0.9, delay: 1.2, options: [.repeat, .autoreverse]) {
+        UIView.animate(withDuration: 0.9, delay: 0.2, options: [.repeat, .autoreverse]) {
             self.secondLoadingCircle.alpha = 0.8        }
         
-        UIView.animate(withDuration: 0.9, delay: 1.3, options: [.repeat, .autoreverse]) {
+        UIView.animate(withDuration: 0.9, delay: 0.3, options: [.repeat, .autoreverse]) {
             self.thirdLoadingCircle.alpha = 0.8        }
         if loginTextField.text == "" &&
             passwordTextField.text == "" {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3){
                 self.performSegue(withIdentifier: "MainScreeenPresentationSegue1", sender: self)
                 print("Auth succeeded")
             }
-
-            
         } else {
             print("Auth failed")
         }

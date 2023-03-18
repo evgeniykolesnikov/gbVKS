@@ -346,9 +346,8 @@
                                     <constraint firstItem="opb-dD-aC6" firstAttribute="leading" secondItem="NCX-DI-TXu" secondAttribute="trailing" constant="20" id="zeL-aQ-cSA"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz2-Vy-e2Q">
-                                <rect key="frame" x="177" y="180" width="76" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz2-Vy-e2Q">
+                                <rect key="frame" x="177" y="188" width="76" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -357,15 +356,26 @@
                                     <action selector="buttonPressed" destination="d84-vy-jLn" eventType="touchUpInside" id="jwR-Xc-bO3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageComradeAkhmatovaAnnaAndreevna" translatesAutoresizingMaskIntoConstraints="NO" id="WGH-9T-Ulg">
+                                <rect key="frame" x="147" y="249" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="QNq-7N-7kp"/>
+                                    <constraint firstAttribute="height" constant="120" id="ptV-Bd-Evy"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JKI-lO-mPD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="WGH-9T-Ulg" firstAttribute="centerX" secondItem="JKI-lO-mPD" secondAttribute="centerX" id="KYZ-tH-ks8"/>
+                            <constraint firstItem="WGH-9T-Ulg" firstAttribute="top" secondItem="fz2-Vy-e2Q" secondAttribute="bottom" constant="26" id="WLx-fs-oDS"/>
                             <constraint firstItem="1be-J3-7g9" firstAttribute="centerX" secondItem="JKI-lO-mPD" secondAttribute="centerX" id="XPh-xh-n6d"/>
                             <constraint firstItem="1be-J3-7g9" firstAttribute="centerY" secondItem="JKI-lO-mPD" secondAttribute="centerY" id="Z2w-w7-inx"/>
+                            <constraint firstItem="1be-J3-7g9" firstAttribute="top" secondItem="WGH-9T-Ulg" secondAttribute="bottom" constant="22" id="dt4-zv-wZL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avatarAnimationTap" destination="WGH-9T-Ulg" id="g2f-Ih-awQ"/>
                         <outlet property="loadingCircleFirst" destination="NCX-DI-TXu" id="Q7u-Ge-NtW"/>
                         <outlet property="loadingCircleSecond" destination="opb-dD-aC6" id="hfK-zI-cjQ"/>
                         <outlet property="loadingCircleThird" destination="mlY-Rf-dpS" id="kEv-bk-Dd2"/>
@@ -493,6 +503,8 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="avatarComrade" destination="Szk-z2-4M7" id="KfO-f0-kDr"/>
+                                    <outlet property="containerViewComrade" destination="BIg-sh-R3E" id="lpV-SR-nTu"/>
+                                    <outlet property="contentView" destination="BIg-sh-R3E" id="JZ7-jV-MVg"/>
                                     <outlet property="nameComradeLabel" destination="91K-mX-lIe" id="WRg-Ov-U17"/>
                                     <outlet property="shadowAvatarComrade" destination="95B-Q6-Ejt" id="yFZ-Gv-1oI"/>
                                     <segue destination="vEU-gs-EUB" kind="show" identifier="showAvatar" id="oJu-SO-5wz"/>
@@ -1189,6 +1201,7 @@
         <image name="applelogo" catalog="system" width="105" height="128"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="imageComradeAkhmatovaAnnaAndreevna" width="1024" height="1024"/>
         <image name="newspaper" catalog="system" width="128" height="111"/>
         <image name="person.3.sequence.fill" catalog="system" width="128" height="59"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
